@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .popover-container {
+  position: relative;
+ 
+}
+
+.popover-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popover-content {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 200px; */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.popover-container:hover .popover-content {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+<div class="popover-container">
+    <button class="popover-button">Click me</button>
+    <div class="popover-content">
+      <p>This is the popover content!</p>
+    </div>
+</div>
+  
+
+<script>
+    const button = document.querySelector('.popover-button');
+const content = document.querySelector('.popover-content');
+
+button.addEventListener('click', () => {
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <div style="height: 1600px; border: 2px solid;">
+
+    </div>
+    <div>
+        <button popovertarget="model">Model</button>
+        <div id="model" popover>
+            <h2>Model</h2>
+            <p>this is custom model popup box</p>
+        </div>
+    </div> -->
+</body>
+</html>
