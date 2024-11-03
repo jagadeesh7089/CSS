@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            align-content: center;
+            background-color: rgb(84, 88, 86);
+        }
+
+        .circl{
+            height:300px;
+            width:300px;
+             border-top: 10px solid red ;
+            border-bottom: 10px solid green ;
+            border-left: 10px solid yellow ;
+            border-right: 10px solid blueviolet ; 
+            margin: auto;
+            border-radius:50% ;
+            /* transform: rotate(45deg); */
+            /* transform: rotate3d(1,1,1,360deg); */
+           animation: rotate 10s linear infinite
+        }
+
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="circl">
+
+    </div>
+</body>
+</html>

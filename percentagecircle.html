@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    .progress-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  border-radius: 50%;
+  background: conic-gradient(#3498db 75%, #f3f3f3 0%);
+  animation: percen 1.5s linear  ;
+  animation-delay: 1s;
+  
+}
+
+@keyframes percen {
+    0%{
+        background: conic-gradient(#3498db 0%, #f3f3f3 0%); 
+        transition: 1.2s ease-in-out; 
+    }
+    10%{
+        background: conic-gradient(#3498db 10%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    20%{
+        background: conic-gradient(#3498db 20%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    30%{
+        background: conic-gradient(#3498db 30%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    40%{
+        background: conic-gradient(#3498db 40%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    50%{
+        background: conic-gradient(#3498db 50%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    60%{
+        background: conic-gradient(#3498db 60%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    70%{
+        background: conic-gradient(#3498db 70%, #f3f3f3 0%);
+        transition: 1.2s ease-in-out; 
+    }
+    75%{
+        background: conic-gradient(#3498db 75%, #f3f3f3 0%); 
+        transition: 1.2s ease-in-out;   
+    }
+    
+}
+
+.percentage{
+    width: 90%;
+    height: 90%;
+    border: 2px ;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #f3f3f3;
+    align-content: center;
+    
+}
+span{
+    display:inline-block;
+    color: #3498db;
+    margin-left:39%;
+    
+    font-size: larger;
+    animation: typed 0.8s steps(1,end) infinite;
+    
+}
+@keyframes typed{
+    0%{
+       
+    }
+    100%{
+      
+    }
+    
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="progress-circle">
+        <div class="percentage">
+            <span id="d1">75</span>
+        </div>
+      </div>
+      <script>
+        function updateProgress(percentage) {
+  const circle = document.querySelector('.progress-circle');
+ 
+  circle.style.background = `conic-gradient(#3498db ${percentage}%, #f3f3f3 0%)`;
+}
+
+// Example: update progress to 75%
+updateProgress(75);
+
+      </script>
+      
+</body>
+</html>

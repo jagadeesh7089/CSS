@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .loader-container {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  
+  animation: loader 10s linear infinite;
+  animation: spin 5s linear infinite ;
+}
+@keyframes loader {
+    0%{
+        border-top: 16px solid #3498db;
+    }
+    25%{
+        border-top: 16px solid #3498db; 
+        border-left: 16px solid #3498db; 
+    }
+    50%{
+        border-top: 16px solid #3498db; 
+        border-left: 16px solid #3498db; 
+        border-bottom: 16px solid #3498db; 
+    }
+    75%{
+        border-top: 16px solid #3498db; 
+        border-left: 16px solid #3498db; 
+        border-bottom: 16px solid #3498db;
+        border-right: 16px solid #3498db;
+    }
+    100%{
+        border-top: 16px solid #3498db; 
+        border-left: 16px solid #3498db; 
+        border-bottom: 16px solid #3498db;
+        border-right: 16px solid #3498db;
+    }
+    
+}
+
+.loader-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #3498db;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+</head>
+<body >
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-percentage">0%</div>
+      </div>
+
+
+      <script>
+        let loader = document.querySelector('.loader');
+let percentage = document.querySelector('.loader-percentage');
+let count = 0;
+
+let interval = setInterval(() => {
+  count++;
+  percentage.textContent = count + '%';
+  if (count === 100) {
+    clearInterval(interval);
+  }
+}, 100);
+      </script>
+</body>
+</html>

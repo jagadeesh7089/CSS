@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:flex;
+            flex-wrap: wrap;
+       
+            justify-content: space-evenly;
+           
+          
+        }
+        .child{
+            width: 20%;
+            border: 2px solid;
+            margin: 2px 25px;
+            background-color:rgb(252, 238, 221);
+            padding: 5px;
+           
+           
+        }
+       
+
+
+        .d1{
+            width:160px ;
+            height: 160px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background:url("https://www.foodrepublic.com/img/gallery/how-to-top-vanilla-ice-cream-with-hot-sauce-the-right-way/l-intro-1684539127.jpg") ;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        
+        }
+        h5{
+            text-align: center;
+        }
+        .parent:hover .img{
+            transform: scale(1.1);
+            box-sizing: border-box;
+        } 
+
+        img{
+            border: 2px solid ;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="d1">
+                <img src="https://www.foodrepublic.com/img/gallery/how-to-top-vanilla-ice-cream-with-hot-sauce-the-right-way/l-intro-1684539127.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <h5>Vanilla</h5>
+            <p>For the best Vanilla Ice Cream with just three ingredients, use pure vanilla extract. This will ensure the best vanilla flavor. 
+                The resulting ice cream is fabulous on its own, but it also makes the perfect base for other flavors.</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="d1"></div>
+            <h5>Vanilla</h5>
+            <p>For the best Vanilla Ice Cream with just three ingredients, use pure vanilla extract. This will ensure the best vanilla flavor. 
+                The resulting ice cream is fabulous on its own, but it also makes the perfect base for other flavors.</p>
+        </div>
+        <div class="child">
+            <div class="d1"></div>
+            <h5>Vanilla</h5>
+            <p>For the best Vanilla Ice Cream with just three ingredients, use pure vanilla extract. This will ensure the best vanilla flavor. 
+                The resulting ice cream is fabulous on its own, but it also makes the perfect base for other flavors.</p>
+        </div>
+        <div class="child">
+            <div class="d1"></div>
+            <h5>Vanilla</h5>
+            <p>For the best Vanilla Ice Cream with just three ingredients, use pure vanilla extract. This will ensure the best vanilla flavor. 
+                The resulting ice cream is fabulous on its own, but it also makes the perfect base for other flavors.</p>
+        </div>
+
+
+
+        
+    </div>
+
+    <script>
+        ScrollReveal().reveal('.child',{
+            interval:200
+        })
+    </script>
+</body>
+</html>

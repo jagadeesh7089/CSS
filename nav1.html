@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(72, 72, 72);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            position: relative;
+            display: inline-block;
+            padding: 0 23px;
+            z-index: 1;
+           
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            border: 2px solid red;
+            height: 45px;
+            position: relative;
+            align-items: center;
+            background-color: rgb(24, 24, 24);
+            
+            
+        }
+        span{
+           display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95px;
+            height: 80%;
+            background-color: red;
+            border-radius: 8px;
+            color: white;
+            margin: 3px 0 0px 3px;
+            left: 20px;
+            transition: 0.5s ease-in-out;
+            
+
+        }
+        nav :nth-child(2):hover~span {
+       left: 165px;
+        }
+        nav :nth-child(3):hover~span{
+            left:310px
+        }
+        nav :nth-child(4):hover~span{
+            left:460px
+        }
+        nav :nth-child(5):hover~span{
+
+            left: 620px ;
+        }
+        #d1:active{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body >
+    <div style="width: 50%; height: 1200px;">
+        <nav>
+            <a href=""> Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Profile</a>
+            <a href="#d3" id="d1">Contactus</a>
+            <span></span>
+        </nav>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(68, 67, 67);
+        }
+        .parent{
+            height: 400px;
+            width: 300px;
+          
+            position: relative;
+            margin: auto;
+        }
+        .child2{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .child1{
+            width: 97%;
+            height: 98%;
+            position:absolute;
+            background-color:rgb(52, 50, 50) ;
+            top: 0;
+            z-index: 1;
+            margin:4px;
+            backdrop-filter: blur(20px);
+        }
+        .child2{
+            border-radius: 5px;
+            background: rgb(126,96,248);
+background: linear-gradient(180deg, rgba(126,96,248,1) 71%, rgba(212,54,189,1) 100%);
+            transition: 2s;
+        
+
+        }
+        .parent:hover .child2{
+            transform: rotateY(180deg);
+            transition: 2s ease-in-out;
+            z-index:-1;
+            
+        }
+        p{
+            color:white;
+            padding: 20px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Illum adipisci, inventore explicabo similique esse officiis,
+                 consectetur dolore commodi, pariatur maiores rerum. 
+                 Quod eveniet ad odio fugit nam dolorum maiores assumenda.</p>
+        </div>
+        <div class="child2">
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+           overflow: hidden;
+           height: 500px;
+           align-content: center;
+        }
+        .child{
+            width: 20%;
+            height: 300px;
+            border: 2px solid red  ;
+            background-color:rgb(201, 91, 150);
+           animation: margin 5s linear infinite;
+           
+        }
+        @keyframes margin {
+            0%{
+                transform: rotate3d(1,1,1,0deg);
+                margin-left: -25%;
+            }
+            100%{
+                transform: rotate3d(1,1,1,360deg);
+                margin-left: 101%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

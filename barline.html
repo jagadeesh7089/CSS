@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .parent{
+            height: 300px;
+            align-content: center;
+            
+           
+        }
+        .child{
+            height: 40px; 
+            border: 2px solid green;
+            margin: -2px;
+            background-color: green;
+           
+            transform:skewY(5deg) ;
+            position:absolute;
+            width: 100%;
+            z-index: 1;
+        }
+        .child1{
+            height: 40px; 
+            border: 2px solid rgb(46, 250, 46);
+            background-color: rgb(46, 250, 46);
+            margin: -2px;
+            transform:skewY(-5deg) ;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" style="display: flex; justify-content: space-around;">
+            
+            
+            <p style="color: aliceblue;">hii ra maya</p>
+            <p style="color: aliceblue;">hii ra maya</p>
+            <p style="color: aliceblue;">hii ra maya</p>
+        </div>
+        <div class="child1" style="display: flex; justify-content: space-around;">
+            <p style="color: aliceblue;">hii ra maya</p>
+            <p style="color: aliceblue;">hii ra maya</p>
+            <p style="color: aliceblue;">hii ra maya</p>
+        </div>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi voluptate accusamus. Magnam saepe 
+        sapiente itaque quo, libero minima nemo aliquid, corrupti amet soluta ea quibusdam quis voluptatibus, adipisci error?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae nemo explicabo. Itaque harum explicabo eos,
+         asperiores magni voluptate consequatur minima sed at officia labore dolores pariatur minus, voluptatem eveniet!
+
+    </div>
+</body>
+</html>
